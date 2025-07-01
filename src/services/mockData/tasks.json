@@ -1,0 +1,90 @@
+[
+  {
+    "Id": 1,
+    "title": "Review quarterly budget proposal",
+    "description": "Analyze the Q4 budget allocations and provide feedback on resource distribution",
+    "listId": 1,
+    "priority": "high",
+    "dueDate": "2024-01-25",
+    "completed": false,
+    "createdAt": "2024-01-20T10:00:00Z",
+    "completedAt": null
+  },
+  {
+    "Id": 2,
+    "title": "Schedule team meeting for project kickoff",
+    "description": "Coordinate with all stakeholders to find suitable time slot",
+    "listId": 1,
+    "priority": "medium",
+    "dueDate": "2024-01-24",
+    "completed": false,
+    "createdAt": "2024-01-20T11:30:00Z",
+    "completedAt": null
+  },
+  {
+    "Id": 3,
+    "title": "Buy groceries for the week",
+    "description": "Milk, bread, vegetables, fruits, and cleaning supplies",
+    "listId": 2,
+    "priority": "medium",
+    "dueDate": "2024-01-23",
+    "completed": false,
+    "createdAt": "2024-01-20T09:15:00Z",
+    "completedAt": null
+  },
+  {
+    "Id": 4,
+    "title": "Complete React component refactoring",
+    "description": "Update legacy components to use modern hooks pattern",
+    "listId": 3,
+    "priority": "high",
+    "dueDate": "2024-01-26",
+    "completed": false,
+    "createdAt": "2024-01-19T14:20:00Z",
+    "completedAt": null
+  },
+  {
+    "Id": 5,
+    "title": "Call dentist for appointment",
+    "description": "Schedule regular cleaning and checkup",
+    "listId": 2,
+    "priority": "low",
+    "dueDate": "2024-01-27",
+    "completed": true,
+    "createdAt": "2024-01-18T16:45:00Z",
+    "completedAt": "2024-01-21T10:30:00Z"
+  },
+  {
+    "Id": 6,
+    "title": "Prepare presentation for client meeting",
+    "description": "Include project timeline, deliverables, and cost breakdown",
+    "listId": 1,
+    "priority": "high",
+    "dueDate": "2024-01-24",
+    "completed": false,
+    "createdAt": "2024-01-21T08:00:00Z",
+    "completedAt": null
+  },
+  {
+    "Id": 7,
+    "title": "Update portfolio website",
+    "description": "Add recent projects and update skills section",
+    "listId": 3,
+    "priority": "medium",
+    "dueDate": "2024-01-28",
+    "completed": false,
+    "createdAt": "2024-01-20T13:15:00Z",
+    "completedAt": null
+  },
+  {
+    "Id": 8,
+    "title": "Plan weekend hiking trip",
+    "description": "Research trails, check weather, pack equipment",
+    "listId": 2,
+    "priority": "low",
+    "dueDate": "2024-01-26",
+    "completed": false,
+    "createdAt": "2024-01-21T17:30:00Z",
+    "completedAt": null
+  }
+]

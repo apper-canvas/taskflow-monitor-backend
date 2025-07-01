@@ -1,0 +1,121 @@
+@import 'react-toastify/dist/ReactToastify.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply font-body;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+  
+  body {
+    @apply bg-white text-gray-900 antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-gradient-to-r from-primary-500 to-secondary-500 text-white rounded-lg font-medium shadow-gentle hover:shadow-elevated hover:scale-105 active:scale-95 transition-all duration-200;
+  }
+  
+  .btn-secondary {
+    @apply px-4 py-2 bg-white text-gray-700 border border-gray-200 rounded-lg font-medium shadow-gentle hover:shadow-elevated hover:bg-gray-50 hover:scale-105 active:scale-95 transition-all duration-200;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-gentle hover:shadow-elevated transition-all duration-200 hover:scale-102;
+  }
+  
+  .input-field {
+    @apply w-full px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200;
+  }
+  
+  .priority-high {
+    @apply text-red-500 bg-red-50 border-red-200;
+  }
+  
+  .priority-medium {
+    @apply text-amber-500 bg-amber-50 border-amber-200;
+  }
+  
+  .priority-low {
+    @apply text-green-500 bg-green-50 border-green-200;
+  }
+}
+
+/* Toast Customization */
+.Toastify__toast-container {
+  @apply z-50;
+}
+
+.Toastify__toast {
+  @apply rounded-lg shadow-floating font-medium text-sm;
+  min-height: 48px;
+}
+
+.Toastify__toast--success {
+  @apply bg-white border-l-4 border-green-500 text-gray-900;
+}
+
+.Toastify__toast--error {
+  @apply bg-white border-l-4 border-red-500 text-gray-900;
+}
+
+.Toastify__toast--info {
+  @apply bg-white border-l-4 border-blue-500 text-gray-900;
+}
+
+.Toastify__toast--warning {
+  @apply bg-white border-l-4 border-amber-500 text-gray-900;
+}
+
+.Toastify__progress-bar {
+  @apply bg-gradient-to-r from-primary-500 to-secondary-500;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 rounded-full;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full hover:bg-gray-400;
+}
+
+/* Priority Pulse Animation */
+.priority-pulse {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Completion Animation */
+.task-complete {
+  animation: taskComplete 0.3s ease-out forwards;
+}
+
+@keyframes taskComplete {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(0.95); opacity: 0.7; }
+}
+
+/* Gradient Text */
+.gradient-text {
+  @apply bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent;
+}
+
+/* Hover Scale Effect */
+.hover-scale {
+  @apply transition-transform duration-200 hover:scale-102;
+}
+
+.scale-102 {
+  transform: scale(1.02);
+}
