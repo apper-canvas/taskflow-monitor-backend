@@ -115,7 +115,3 @@
 .hover-scale {
   @apply transition-transform duration-200 hover:scale-102;
 }
-
-.scale-102 {
-  transform: scale(1.02);
-}

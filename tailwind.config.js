@@ -57,6 +57,9 @@ export default {
           '0%': { transform: 'scale(0)', opacity: '1' },
           '100%': { transform: 'scale(4)', opacity: '0' },
         }
+},
+      scale: {
+        '102': '1.02',
       },
       boxShadow: {
         'gentle': '0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 1px 2px -1px rgba(0, 0, 0, 0.06)',
