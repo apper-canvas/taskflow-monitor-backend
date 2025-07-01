@@ -80,17 +80,19 @@ filtered.sort((a, b) => {
       switch (filters.sortBy) {
         case 'priority': {
           const priorityOrder = { high: 3, medium: 2, low: 1 };
-          return priorityOrder[b.priority] - priorityOrder[a.priority];
+          const aPriority = priorityOrder[a?.priority] || 0;
+          const bPriority = priorityOrder[b?.priority] || 0;
+          return bPriority - aPriority;
         }
         case 'created':
-          return new Date(b.createdAt) - new Date(a.createdAt);
+          return new Date(b?.createdAt || 0) - new Date(a?.createdAt || 0);
         case 'title':
-          return a.title.localeCompare(b.title);
+          return (a?.title || '').localeCompare(b?.title || '');
         case 'dueDate':
         default:
-          if (!a.dueDate && !b.dueDate) return 0;
-          if (!a.dueDate) return 1;
-          if (!b.dueDate) return -1;
+          if (!a?.dueDate && !b?.dueDate) return 0;
+          if (!a?.dueDate) return 1;
+          if (!b?.dueDate) return -1;
           return new Date(a.dueDate) - new Date(b.dueDate);
       }
     });
