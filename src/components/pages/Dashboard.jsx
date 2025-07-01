@@ -160,9 +160,10 @@ filtered.sort((a, b) => {
         return 'Today\'s Tasks';
       case 'upcoming':
         return 'Upcoming Tasks';
-      case 'list':
+case 'list': {
         const list = lists.find(l => l.Id === listId);
         return list ? list.name : 'List Tasks';
+      }
       default:
         return 'All Tasks';
     }
