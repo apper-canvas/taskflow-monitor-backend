@@ -84,16 +84,19 @@ filtered.sort((a, b) => {
           const bPriority = priorityOrder[b?.priority] || 0;
           return bPriority - aPriority;
         }
-        case 'created':
+        case 'created': {
           return new Date(b?.createdAt || 0) - new Date(a?.createdAt || 0);
-        case 'title':
+        }
+        case 'title': {
           return (a?.title || '').localeCompare(b?.title || '');
+        }
         case 'dueDate':
-        default:
+        default: {
           if (!a?.dueDate && !b?.dueDate) return 0;
           if (!a?.dueDate) return 1;
           if (!b?.dueDate) return -1;
           return new Date(a.dueDate) - new Date(b.dueDate);
+        }
       }
     });
     
